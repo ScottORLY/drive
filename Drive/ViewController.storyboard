@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="36z-wb-cFz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kCk-By-YKw">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="overFullScreen" interfaceStyle="light" id="36z-wb-cFz" customClass="ViewController" customModule="Drive" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HZB-ka-UIK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPi-vB-Uae">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KVa-RJ-AUD">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="223"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="pAL-V8-Ry6">
+                                                <rect key="frame" x="25" y="0.0" width="364" height="129"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nKU-pB-A7C" userLabel="email">
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="64"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="username field"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="64" id="SF6-VW-beR"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.2666666667" green="0.2784313725" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" spellCheckingType="no" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a valid email address." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="x10-D2-19J">
+                                                        <rect key="frame" x="0.0" y="64.5" width="364" height="0.0"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="email validation error"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-EW-zfY" userLabel="password">
+                                                        <rect key="frame" x="0.0" y="65" width="364" height="64"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="password field"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="64" id="CFE-Wv-agM"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.2666666667" green="0.2784313725" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password required." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="veR-69-UUY">
+                                                        <rect key="frame" x="0.0" y="129" width="364" height="0.0"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="password validation error"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2e-C5-cdl">
+                                                <rect key="frame" x="24.5" y="159" width="365" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="signin"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="qgW-dl-6rc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                <state key="normal" title="Sign In">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pAL-V8-Ry6" firstAttribute="width" secondItem="KVa-RJ-AUD" secondAttribute="width" multiplier="0.88" id="8Xy-or-CfQ"/>
+                                            <constraint firstItem="c2e-C5-cdl" firstAttribute="width" secondItem="pAL-V8-Ry6" secondAttribute="width" multiplier="1.00262" id="uvs-xw-sOL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="KVa-RJ-AUD" firstAttribute="leading" secondItem="88b-jV-4YP" secondAttribute="leading" id="BmF-ym-K6s"/>
+                                    <constraint firstItem="KVa-RJ-AUD" firstAttribute="bottom" secondItem="88b-jV-4YP" secondAttribute="bottom" id="KfR-nd-C9v"/>
+                                    <constraint firstItem="KVa-RJ-AUD" firstAttribute="trailing" secondItem="88b-jV-4YP" secondAttribute="trailing" id="Lts-z3-4PY"/>
+                                    <constraint firstItem="KVa-RJ-AUD" firstAttribute="top" secondItem="88b-jV-4YP" secondAttribute="top" constant="200" id="Rdc-6F-TRr"/>
+                                    <constraint firstItem="KVa-RJ-AUD" firstAttribute="trailing" secondItem="fkj-jT-yLF" secondAttribute="trailing" id="TEY-0N-moz"/>
+                                    <constraint firstItem="KVa-RJ-AUD" firstAttribute="centerX" secondItem="JPi-vB-Uae" secondAttribute="centerX" id="hGa-Rb-d9H"/>
+                                    <constraint firstItem="KVa-RJ-AUD" firstAttribute="leading" secondItem="fkj-jT-yLF" secondAttribute="leading" id="qkq-UF-g5p"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="88b-jV-4YP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fkj-jT-yLF"/>
+                                <connections>
+                                    <outlet property="delegate" destination="36z-wb-cFz" id="Lea-BA-p8j"/>
+                                    <outletCollection property="gestureRecognizers" destination="rZV-w0-Unc" appends="YES" id="PZD-gd-mb3"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e2h-Qy-XdL"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.27450980390000002" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="root view">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="e2h-Qy-XdL" firstAttribute="trailing" secondItem="JPi-vB-Uae" secondAttribute="trailing" id="5RC-VC-6wW"/>
+                            <constraint firstItem="JPi-vB-Uae" firstAttribute="bottom" secondItem="HZB-ka-UIK" secondAttribute="bottom" id="Cak-c8-1eg"/>
+                            <constraint firstItem="JPi-vB-Uae" firstAttribute="leading" secondItem="e2h-Qy-XdL" secondAttribute="leading" id="DHr-3q-nE0"/>
+                            <constraint firstAttribute="top" secondItem="JPi-vB-Uae" secondAttribute="top" id="ZHl-YY-XeR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="nKU-pB-A7C" id="Il4-pr-T1n"/>
+                        <outlet property="emailError" destination="x10-D2-19J" id="ZGI-XY-7uJ"/>
+                        <outlet property="password" destination="NPR-EW-zfY" id="qZ4-aw-L1R"/>
+                        <outlet property="passwordError" destination="veR-69-UUY" id="nZl-ca-KkD"/>
+                        <outlet property="scroll" destination="JPi-vB-Uae" id="u18-Zr-Cof"/>
+                        <outlet property="signIn" destination="c2e-C5-cdl" id="Rec-p8-CV4"/>
+                        <outlet property="tap" destination="rZV-w0-Unc" id="7zH-rK-HuO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5WK-HV-wvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rZV-w0-Unc"/>
+            </objects>
+            <point key="canvasLocation" x="2328" y="-204"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
