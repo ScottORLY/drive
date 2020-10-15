@@ -1,4 +1,11 @@
-//  Copyright © 2020 Scott Orlyck. All rights reserved.
+//The MIT License Copyright © 2015 Krunoslav Zaher, Shai Mishali All rights reserved.
+
+//  ActivityIndicator.swift
+//  RxExample
+//
+//  Created by Krunoslav Zaher on 10/18/15.
+//  Copyright © 2015 Krunoslav Zaher. All rights reserved.
+//
 
 import Foundation
 import RxSwift
